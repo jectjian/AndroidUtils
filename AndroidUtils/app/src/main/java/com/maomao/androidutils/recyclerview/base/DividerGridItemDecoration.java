@@ -1,4 +1,4 @@
-package com.maomao.androidutils.recyclerview;
+package com.maomao.androidutils.recyclerview.base;
 
 import android.content.Context;
 import android.content.res.TypedArray;

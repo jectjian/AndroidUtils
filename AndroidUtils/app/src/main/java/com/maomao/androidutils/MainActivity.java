@@ -1,11 +1,12 @@
 package com.maomao.androidutils;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.maomao.androidutils.recyclerview.RecyclerViewActivity;
+import com.maomao.androidutils.materialdesign.sharedelement.ShareElementActivity;
+import com.maomao.androidutils.recyclerview.base.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +17,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startRecyclerViewActivity(View view){
-        startActivity(new Intent(MainActivity.this , RecyclerViewActivity.class));
+        startActivity(RecyclerViewActivity.class);
+    }
+
+    public void startShareElementActivity(View view){
+        startActivity(ShareElementActivity.class);
+    }
+
+    private void startActivity(Class<?> cls){
+        startActivity(new Intent(MainActivity.this , cls));
     }
 }

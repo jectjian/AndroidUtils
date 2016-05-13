@@ -1,5 +1,5 @@
 //package com.zhy.sample.demo_recyclerview;
-package com.maomao.androidutils.recyclerview;
+package com.maomao.androidutils.recyclerview.base;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

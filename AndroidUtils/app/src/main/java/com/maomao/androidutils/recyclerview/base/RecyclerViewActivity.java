@@ -1,15 +1,13 @@
-package com.maomao.androidutils.recyclerview;
+package com.maomao.androidutils.recyclerview.base;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,7 +38,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
         mAdapter = new SimplerAdapter(this, mData);
 
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         /*mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(4,
 				StaggeredGridLayoutManager.VERTICAL));*/
         mRecyclerView.setAdapter(mAdapter);

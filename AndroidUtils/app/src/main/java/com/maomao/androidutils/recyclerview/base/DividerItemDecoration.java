@@ -1,4 +1,4 @@
-package com.maomao.androidutils.recyclerview;
+package com.maomao.androidutils.recyclerview.base;
 
 /*
  * Copyright (C) 2014 The Android Open Source Project
