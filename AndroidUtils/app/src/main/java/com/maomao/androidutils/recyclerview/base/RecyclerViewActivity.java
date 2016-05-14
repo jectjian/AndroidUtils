@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 
@@ -51,7 +52,10 @@ public class RecyclerViewActivity extends AppCompatActivity {
     }
 
     private void initEvent() {
-        mAdapter.setOnItemClickListener(new SimplerAdapter.OnItemClickListener() {
+
+        //两种设置点击事件监听的例子
+        //第一个是adapter中每个item监听点击，性能低下。
+        /*mAdapter.setOnItemClickListener(new SimplerAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
                 Toast.makeText(RecyclerViewActivity.this, position + " click",
@@ -61,6 +65,21 @@ public class RecyclerViewActivity extends AppCompatActivity {
             @Override
             public void onItemLongClick(View view, int position) {
                 Toast.makeText(RecyclerViewActivity.this, position + " long click",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });*/
+
+        //第二个是这样的。
+        mRecyclerView.addOnItemTouchListener(new OnRecyclerItemClickListener(mRecyclerView) {
+            @Override
+            public void onItemClick(RecyclerView.ViewHolder vh) {
+                Toast.makeText(RecyclerViewActivity.this, vh.getPosition() + " click",
+                        Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onLongClick(RecyclerView.ViewHolder vh) {
+                Toast.makeText(RecyclerViewActivity.this, vh.getPosition() + " long click",
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -106,4 +125,6 @@ public class RecyclerViewActivity extends AppCompatActivity {
         }
         return true;
     }
+
+
 }
