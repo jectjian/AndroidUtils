@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.maomao.androidutils.imooc.progressbar.ProgressBarActivity;
 import com.maomao.androidutils.materialdesign.sharedelement.ShareElementActivity;
 import com.maomao.androidutils.recyclerview.base.RecyclerViewActivity;
 
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void startShareElementActivity(View view){
         startActivity(ShareElementActivity.class);
+    }
+
+    public void startProgressBarActivity(View view){
+        startActivity(ProgressBarActivity.class);
     }
 
     private void startActivity(Class<?> cls){

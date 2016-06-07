@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mt="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maomao.androidutils.imooc.progressbar.ProgressBarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.maomao.androidutils.imooc.progressbar.view.HorizontalProgressbarWithProgress
+            android:id="@+id/id_progress01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:progress="0"/>
+
+
+        <com.maomao.androidutils.imooc.progressbar.view.HorizontalProgressbarWithProgress
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:progress="50"
+            mt:progress_text_color="#44ff0000"/>
+
+        <com.maomao.androidutils.imooc.progressbar.view.RoundProgressBarWithProgress
+            android:id="@+id/id_progress02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:progress="50"
+            mt:progress_text_color="#44ff0000"
+            mt:radius="50dp"/>
+
+        <com.maomao.androidutils.imooc.progressbar.view.RoundProgressBarWithProgress
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:progress="50"
+            mt:progress_text_color="#44ff0000"
+            mt:radius="80dp"/>
+    </LinearLayout>
+
+</ScrollView>

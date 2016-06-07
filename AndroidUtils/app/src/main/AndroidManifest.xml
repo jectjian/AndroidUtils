@@ -16,15 +16,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".recyclerview.base.RecyclerViewActivity"/>
-        <activity android:name=".materialdesign.sharedelement.ShareElementActivity"
+        <activity
+            android:name=".materialdesign.sharedelement.ShareElementActivity"
             android:label="@string/ShareElement">
         </activity>
-        <activity android:name=".materialdesign.sharedelement.ShareElementOtherActivity"
+        <activity
+            android:name=".materialdesign.sharedelement.ShareElementOtherActivity"
             android:label="@string/ShareElementOther">
         </activity>
-
-        <activity android:name=".recyclerview.base.StaggeredGridLayoutActivity"
-            ></activity>
+        <activity android:name=".recyclerview.base.StaggeredGridLayoutActivity"/>
+        <activity android:name=".imooc.progressbar.ProgressBarActivity">
+        </activity>
     </application>
 
 </manifest>
