@@ -27,6 +27,8 @@
         <activity android:name=".recyclerview.base.StaggeredGridLayoutActivity"/>
         <activity android:name=".imooc.progressbar.ProgressBarActivity">
         </activity>
+        <activity android:name=".imooc.wuziqi.WuziqiActivity">
+        </activity>
     </application>
 
 </manifest>

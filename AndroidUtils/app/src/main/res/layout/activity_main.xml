@@ -33,4 +33,12 @@
         android:onClick="startProgressBarActivity"
         android:text="打开ProgressBarActivity"
         android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="startWuziqiActivity"
+        android:text="打开WuziqiActivity"
+        android:textSize="20sp"/>
 </LinearLayout>
