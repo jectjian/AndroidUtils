@@ -57,4 +57,12 @@
         android:onClick="startDialogActivity"
         android:text="打开DialogActivity"
         android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="startScrollViewPagerActivity"
+        android:text="打开ScrollViewPagerActivity"
+        android:textSize="20sp"/>
 </LinearLayout>

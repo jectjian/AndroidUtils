@@ -11,6 +11,7 @@ import com.maomao.androidutils.imooc.wuziqi.WuziqiActivity;
 import com.maomao.androidutils.materialdesign.sharedelement.ShareElementActivity;
 import com.maomao.androidutils.recyclerview.base.RecyclerViewActivity;
 import com.maomao.androidutils.theme.SplashActivity;
+import com.maomao.androidutils.viewpager.ScrollViewPagerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(DialogActivity.class);
     }
 
+    public void startScrollViewPagerActivity(View view){
+        startActivity(ScrollViewPagerActivity.class);
+    }
     private void startActivity(Class<?> cls){
         startActivity(new Intent(MainActivity.this , cls));
     }

@@ -38,8 +38,11 @@
         </activity>
         <activity android:name=".dialog.DialogActivity">
         </activity>
-        <activity android:name=".dialog.DialogMainActivity"
+        <activity
+            android:name=".dialog.DialogMainActivity"
             android:theme="@style/MyDialogTopRight">
+        </activity>
+        <activity android:name=".viewpager.ScrollViewPagerActivity">
         </activity>
     </application>
 
