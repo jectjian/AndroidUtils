@@ -29,6 +29,18 @@
         </activity>
         <activity android:name=".imooc.wuziqi.WuziqiActivity">
         </activity>
+
+        <!-- 利用Theme自定义activity的专场动画 -->
+        <activity
+            android:name=".theme.ThemeActivity"
+            android:theme="@style/Anim_fade"/>
+        <activity android:name=".theme.SplashActivity">
+        </activity>
+        <activity android:name=".dialog.DialogActivity">
+        </activity>
+        <activity android:name=".dialog.DialogMainActivity"
+            android:theme="@style/MyDialogTopRight">
+        </activity>
     </application>
 
 </manifest>

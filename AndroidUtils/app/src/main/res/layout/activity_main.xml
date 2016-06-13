@@ -41,4 +41,20 @@
         android:onClick="startWuziqiActivity"
         android:text="打开WuziqiActivity"
         android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="startThemeActivity"
+        android:text="打开ThemeActivity"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="startDialogActivity"
+        android:text="打开DialogActivity"
+        android:textSize="20sp"/>
 </LinearLayout>
